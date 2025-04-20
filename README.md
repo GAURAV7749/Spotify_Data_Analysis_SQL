@@ -2,7 +2,7 @@
 
 ![image](https://github.com/user-attachments/assets/4bf33359-ddd0-4723-89e0-8af9fcdb4879)
 
-## 📑 Table of Contents
+## 📑 Contents
 
 - [**Introduction**](#introduction)
 - [**💾 Data Setup in SQL Workbench**](#-data-setup-in-sql-workbench)
