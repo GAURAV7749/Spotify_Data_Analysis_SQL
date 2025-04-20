@@ -5,7 +5,7 @@
 ## 📑 Table of Contents
 
 - [**Introduction**](#introduction)
-- [**💾 Data Setup in SQL Workbench**](#💾 Data Setup in SQL Workbench)
+- [**💾 Data Setup in SQL Workbench**](#-data-setup-in-sql-workbench)
 - [**Tools & Technologies**](#tools--technologies)
 - [**SQL Concepts Used**](#sql-concepts-used)
 - [**Data Source**](#data-source)
