@@ -217,6 +217,18 @@ limit 1;
 
 Determined the country generating the highest number of invoices for targeted marketing.
 
+```sql
+# Viewing the Data
+select * from invoice;
+select billing_country,count(*) as no_of_invoice
+ from invoice
+group by billing_country
+order by no_of_invoice desc
+limit 1;
+
+```
+![Invoice Volume by Country](https://github.com/user-attachments/assets/afccaf4d-0880-424c-b4d0-446c611af659)
+
 - Top 3 Invoice Values
 
 Calculated the monetary value of the top 3 highest invoices to understand premium transactions.
