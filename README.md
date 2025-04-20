@@ -98,3 +98,80 @@ select * from album;
 
 ![album](https://github.com/user-attachments/assets/0dd4846a-09a2-4a4d-8f4b-d8cedf48ebed)
 
+```sql
+# Viewing the Data
+select * from album;
+```
+
+**Note:** The image displays only a partial view of the complete results due to screenshot limitations. For the full dataset and comprehensive tables, please execute these queries directly in your SQL environment or refer to the complete result exports available in this repository's data outputs folder.
+
+![Artist](https://github.com/user-attachments/assets/ca5a02d9-b742-4b3d-af41-a0b94a6c79b4)
+
+```sql
+# Viewing the Data
+select * from customer;
+```
+
+**Note:** The image displays only a partial view of the complete results due to screenshot limitations. For the full dataset and comprehensive tables, please execute these queries directly in your SQL environment or refer to the complete result exports available in this repository's data outputs folder.
+
+```sql
+# Viewing the Data
+select * from employee;
+```
+
+**Note:** The image displays only a partial view of the complete results due to screenshot limitations. For the full dataset and comprehensive tables, please execute these queries directly in your SQL environment or refer to the complete result exports available in this repository's data outputs folder.
+
+```sql
+# Viewing the Data
+select * from genre;
+```
+
+**Note:** The image displays only a partial view of the complete results due to screenshot limitations. For the full dataset and comprehensive tables, please execute these queries directly in your SQL environment or refer to the complete result exports available in this repository's data outputs folder.
+
+```sql
+# Viewing the Data
+select * from invoice;
+```
+
+**Note:** The image displays only a partial view of the complete results due to screenshot limitations. For the full dataset and comprehensive tables, please execute these queries directly in your SQL environment or refer to the complete result exports available in this repository's data outputs folder.
+
+```sql
+# Viewing the Data
+select * from invoice_line;
+```
+
+**Note:** The image displays only a partial view of the complete results due to screenshot limitations. For the full dataset and comprehensive tables, please execute these queries directly in your SQL environment or refer to the complete result exports available in this repository's data outputs folder.
+
+```sql
+# Viewing the Data
+select * from media_type;
+```
+
+**Note:** The image displays only a partial view of the complete results due to screenshot limitations. For the full dataset and comprehensive tables, please execute these queries directly in your SQL environment or refer to the complete result exports available in this repository's data outputs folder.
+
+```sql
+# Viewing the Data
+select * from playlist;
+```
+
+**Note:** The image displays only a partial view of the complete results due to screenshot limitations. For the full dataset and comprehensive tables, please execute these queries directly in your SQL environment or refer to the complete result exports available in this repository's data outputs folder.
+
+```sql
+# Viewing the Data
+select * from playlist_track;
+```
+
+**Note:** The image displays only a partial view of the complete results due to screenshot limitations. For the full dataset and comprehensive tables, please execute these queries directly in your SQL environment or refer to the complete result exports available in this repository's data outputs folder.
+
+```sql
+# Viewing the Data
+select * from track;
+```
+
+**Note:** The image displays only a partial view of the complete results due to screenshot limitations. For the full dataset and comprehensive tables, please execute these queries directly in your SQL environment or refer to the complete result exports available in this repository's data outputs folder.
+
+
+
+
+
+
