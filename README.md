@@ -5,6 +5,13 @@
 ## 📑 Table of Contents
 
 - [**Introduction**](#introduction)
+- [**Project Objective**](#project-objective)
+- [**Tools & Technologies**](#tools--technologies)
+- [**SQL Concepts Used**](#sql-concepts-used)
+- [**Data Source**](#data-source)
+- [**Key Insights**](#key-insights)
+- [**Skills Gained**](#skills-gained)
+- [**Future Scope**](#future-scope)
 
 The Spotify Data Analysis Project: In today's changing world, data analysis has become crucial in fields such as business, research, and meteorology. This project showcases the role that data plays in making decisions, advancing research initiatives, and even predicting weather patterns.
 The immense potential of data analysis is evident in this project, which focuses on extracting insights from music-related datasets using SQL queries and aggregate functions (Sum, Order by, Group by, Rank, Limit,  etc.). At its core, Spotify takes center stage as an audio streaming giant with captivating features like seamless song sharing and synchronized lyrics display.
