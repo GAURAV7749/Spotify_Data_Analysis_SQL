@@ -212,6 +212,9 @@ limit 1;
 ```
 ![Senior Employee Identification](https://github.com/user-attachments/assets/af403c4d-e9a4-4920-8b21-5db2f97a9ff7)
 
+Query Explanation:
+
+This query identifies the organization's most senior employee by checking their hierarchical level. It selects the employee's job title, full name, and seniority level from the database. The results are sorted in descending order to display the highest-ranking employee first. By limiting output to just one record, we pinpoint the single most qualified leader. This data-driven approach ensures objective leadership selection based on established company structure.
 
 - Invoice Volume by Country
 
