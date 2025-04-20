@@ -5,7 +5,7 @@
 ## 📑 Table of Contents
 
 - [**Introduction**](#introduction)
-- [**Project Objective**](#project-objective)
+- [**💾 Data Setup in SQL Workbench**](#💾 Data Setup in SQL Workbench)
 - [**Tools & Technologies**](#tools--technologies)
 - [**SQL Concepts Used**](#sql-concepts-used)
 - [**Data Source**](#data-source)
@@ -27,7 +27,32 @@ Tools Used🛠️:
 My Sql Workbench
 
 
+💾 Data Setup in SQL Workbench (Introduction Style)
+In this project, I worked with a music database using MySQL Workbench. The database includes several interrelated tables that reflect real-world entities in a music store environment.
 
+album: Contains details about each album, including Album ID and Title.
+
+artist: Holds information about artists, including their unique Artist ID and Name.
+
+customer: Stores customer data such as names, addresses, and contact details.
+
+employee: Represents employees of the store with their roles and reporting structure.
+
+genre: Lists various music genres with their Genre IDs.
+
+invoice: Captures billing information including Invoice ID, Customer ID, Date, and Total.
+
+invoice_line: Stores line-by-line details of each invoice, such as Track ID, Quantity, and Unit Price.
+
+media_type: Contains types of media formats like MPEG audio, AAC audio, etc.
+
+playlist: Stores playlist names and their IDs.
+
+playlist_track: Maps tracks to their respective playlists.
+
+track: Contains metadata for each song, including Name, Album ID, Media Type, Genre, Composer, Duration, and Price.
+
+These tables were queried using SQL to perform various data analysis operations such as aggregation, joins, filtering, sorting, and ranking to extract business insights from the music data.
 
 
 
