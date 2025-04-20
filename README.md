@@ -199,7 +199,7 @@ select * from track;
 
 ## 🔍 Analytical Insights
 
-- Senior Employee Identification
+### **`Senior Employee Identification`**
 
 Identified the senior-most employee based on job title hierarchy to assign project leadership.
 
