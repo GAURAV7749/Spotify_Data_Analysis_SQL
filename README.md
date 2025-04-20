@@ -76,6 +76,12 @@ Employee Query
 ```sql
 SELECT * FROM employee;
 
+# Viewing the Customers Data
+
+## SQL Query
+```sql
+-- Viewing the first 5 rows of the customers table
+SELECT * FROM customers LIMIT 5;
 
 
 
