@@ -124,6 +124,9 @@ select * from employee;
 
 **Note:** The image displays only a partial view of the complete results due to screenshot limitations. For the full dataset and comprehensive tables, please execute these queries directly in your SQL environment or refer to the complete result exports available in this repository's data outputs folder.
 
+![employee](https://github.com/user-attachments/assets/7f717053-a53f-4b42-8ea4-18e722c1a236)
+
+
 ```sql
 # Viewing the Data
 select * from genre;
