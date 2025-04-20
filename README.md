@@ -87,3 +87,5 @@ select * from media_type;
 select * from playlist;
 select * from playlist_track;
 select * from track;
+```
+**Note:** The image displays only a partial view of the complete results due to screenshot limitations. For the full dataset and comprehensive tables, please execute these queries directly in your SQL environment or refer to the complete result exports available in this repository's data outputs folder.
