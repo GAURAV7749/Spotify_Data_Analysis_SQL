@@ -72,23 +72,18 @@ This exploratory phase involved:
 
 This step helped me plan relevant queries and design a structured approach to uncover meaningful insights from the dataset.
 
-Employee Query
+
 ```sql
-SELECT * FROM employee;
 
-# Viewing the Customers Data
-
-## SQL Query
-```sql
--- Viewing the first 5 rows of the customers table
-SELECT * FROM customers LIMIT 5;
-
-
-
-
-
-
-
-
-
-
+# Viewing the Data
+select * from album;
+select * from artist;
+select * from customer;
+select * from employee;
+select * from genre;
+select * from invoice;
+select * from invoice_line;
+select * from media_type;
+select * from playlist;
+select * from playlist_track;
+select * from track;
