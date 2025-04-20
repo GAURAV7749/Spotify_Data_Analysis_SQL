@@ -6,7 +6,7 @@
 
 - [**Introduction**](#introduction)
 - [**💾 Data Setup in SQL Workbench**](#-data-setup-in-sql-workbench)
-- [**Tools & Technologies**](#tools--technologies)
+- [**🔍 Exploring the Dataset**](#-exploring-the-dataset)
 - [**SQL Concepts Used**](#sql-concepts-used)
 - [**Data Source**](#data-source)
 - [**Key Insights**](#key-insights)
@@ -54,7 +54,23 @@ In this project, I worked with a music database using MySQL Workbench. The datab
 
 These tables were queried using SQL to perform various data analysis operations such as aggregation, joins, filtering, sorting, and ranking to extract business insights from the music data.
 
+## 🔍 Exploring the Dataset
 
+After setting up the database in MySQL Workbench, the initial step was to explore and understand the structure of each table. Using SQL queries like SELECT * FROM table_name LIMIT 5;, I previewed the contents of key tables to get a sense of the data available for analysis.
+
+This exploratory phase involved:
+
+- Reviewing column names, data types, and sample values
+
+- Identifying primary and foreign key relationships between tables
+
+- Understanding the volume and variety of data in each table
+
+- Checking for any missing or duplicate values
+
+- Mapping out how tables such as track, artist, genre, invoice, and customer are interconnected for future joins
+
+This step helped me plan relevant queries and design a structured approach to uncover meaningful insights from the dataset.
 
 
 
