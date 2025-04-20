@@ -1,5 +1,7 @@
 # Spotify_Data_Analysis_SQL
 
+![image](https://github.com/user-attachments/assets/4bf33359-ddd0-4723-89e0-8af9fcdb4879)
+
 Introduction
 
 The Spotify Data Analysis Project: In today's changing world, data analysis has become crucial in fields such as business, research, and meteorology. This project showcases the role that data plays in making decisions, advancing research initiatives, and even predicting weather patterns.
