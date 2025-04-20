@@ -184,6 +184,9 @@ select * from playlist_track;
 
 **Note:** The image displays only a partial view of the complete results due to screenshot limitations. For the full dataset and comprehensive tables, please execute these queries directly in your SQL environment or refer to the complete result exports available in this repository's data outputs folder.
 
+![playlist_track](https://github.com/user-attachments/assets/5171936b-3888-4a75-969f-6d9ae3bb64fa)
+
+
 ```sql
 # Viewing the Data
 select * from track;
