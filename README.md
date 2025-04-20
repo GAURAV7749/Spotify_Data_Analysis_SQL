@@ -144,6 +144,9 @@ select * from invoice;
 
 **Note:** The image displays only a partial view of the complete results due to screenshot limitations. For the full dataset and comprehensive tables, please execute these queries directly in your SQL environment or refer to the complete result exports available in this repository's data outputs folder.
 
+![invoice](https://github.com/user-attachments/assets/4e2ee481-a340-4322-84f9-2f71da55f924)
+
+
 ```sql
 # Viewing the Data
 select * from invoice_line;
