@@ -30,15 +30,15 @@ My Sql Workbench
 
 In this project, I worked with a music database using MySQL Workbench. The database includes several interrelated tables that reflect real-world entities in a music store environment.
 
-album: Contains details about each album, including Album ID and Title.
+- album: Contains details about each album, including Album ID and Title.
 
-artist: Holds information about artists, including their unique Artist ID and Name.
+- artist: Holds information about artists, including their unique Artist ID and Name.
 
-customer: Stores customer data such as names, addresses, and contact details.
+- customer: Stores customer data such as names, addresses, and contact details.
 
-employee: Represents employees of the store with their roles and reporting structure.
+- employee: Represents employees of the store with their roles and reporting structure.
 
-genre: Lists various music genres with their Genre IDs.
+- genre: Lists various music genres with their Genre IDs.
 
 invoice: Captures billing information including Invoice ID, Customer ID, Date, and Total.
 
