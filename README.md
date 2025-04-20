@@ -114,6 +114,9 @@ select * from customer;
 
 **Note:** The image displays only a partial view of the complete results due to screenshot limitations. For the full dataset and comprehensive tables, please execute these queries directly in your SQL environment or refer to the complete result exports available in this repository's data outputs folder.
 
+![customer](https://github.com/user-attachments/assets/4bd8c09c-efcb-4a22-a1eb-23a83bbadae1)
+
+
 ```sql
 # Viewing the Data
 select * from employee;
