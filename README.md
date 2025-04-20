@@ -72,6 +72,9 @@ This exploratory phase involved:
 
 This step helped me plan relevant queries and design a structured approach to uncover meaningful insights from the dataset.
 
+## Employee Query
+```sql
+SELECT * FROM employee;
 
 
 
