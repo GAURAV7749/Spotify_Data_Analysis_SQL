@@ -134,6 +134,9 @@ select * from genre;
 
 **Note:** The image displays only a partial view of the complete results due to screenshot limitations. For the full dataset and comprehensive tables, please execute these queries directly in your SQL environment or refer to the complete result exports available in this repository's data outputs folder.
 
+![genre](https://github.com/user-attachments/assets/50a97241-9cf2-4e8e-9d41-f03058613a6c)
+
+
 ```sql
 # Viewing the Data
 select * from invoice;
