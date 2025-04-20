@@ -7,10 +7,11 @@
 - [**Introduction**](#introduction)
 - [**💾 Data Setup in SQL Workbench**](#-data-setup-in-sql-workbench)
 - [**🔍 Exploring the Dataset**](#-exploring-the-dataset)
-- [**SQL Concepts Used**](#sql-concepts-used)
+- [**Analytical Insights**](#analytical-insights)
+- [**SQL Techniques Used**](#sql-techniques-used)
+- [**Key Findings**](#key-findings)
 - [**Data Source**](#data-source)
-- [**Key Insights**](#key-insights)
-- [**Skills Gained**](#skills-gained)
+- [**Skills Demonstrated**](#skills-demonstrated)
 - [**Future Scope**](#future-scope)
 
 The Spotify Data Analysis Project: In today's changing world, data analysis has become crucial in fields such as business, research, and meteorology. This project showcases the role that data plays in making decisions, advancing research initiatives, and even predicting weather patterns.
