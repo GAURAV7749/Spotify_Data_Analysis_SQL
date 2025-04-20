@@ -89,3 +89,5 @@ select * from playlist_track;
 select * from track;
 ```
 **Note:** The image displays only a partial view of the complete results due to screenshot limitations. For the full dataset and comprehensive tables, please execute these queries directly in your SQL environment or refer to the complete result exports available in this repository's data outputs folder.
+![album](https://github.com/user-attachments/assets/0dd4846a-09a2-4a4d-8f4b-d8cedf48ebed)
+
