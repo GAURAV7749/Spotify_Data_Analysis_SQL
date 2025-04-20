@@ -4,7 +4,7 @@
 
 ## 📑 Contents
 
-- [**Introduction**](#introduction)
+- [**🌐 Introduction**](#-introduction)
 - [**💾 Data Setup in SQL Workbench**](#-data-setup-in-sql-workbench)
 - [**🔍 Exploring the Dataset**](#-exploring-the-dataset)
 - [**🔍 Analytical Insights**](#-analytical-insights)
