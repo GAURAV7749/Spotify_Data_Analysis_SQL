@@ -164,6 +164,9 @@ select * from media_type;
 
 **Note:** The image displays only a partial view of the complete results due to screenshot limitations. For the full dataset and comprehensive tables, please execute these queries directly in your SQL environment or refer to the complete result exports available in this repository's data outputs folder.
 
+![media_type](https://github.com/user-attachments/assets/de2a4437-c58f-41b7-8fc1-090dcf2e1d5f)
+
+
 ```sql
 # Viewing the Data
 select * from playlist;
