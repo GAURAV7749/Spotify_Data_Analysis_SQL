@@ -203,6 +203,16 @@ select * from track;
 
 Identified the senior-most employee based on job title hierarchy to assign project leadership.
 
+```sql
+# Viewing the Data
+select title, first_name,last_name,levels from employee
+order by levels desc
+limit 1;
+
+```
+![Senior Employee Identification](https://github.com/user-attachments/assets/af403c4d-e9a4-4920-8b21-5db2f97a9ff7)
+
+
 - Invoice Volume by Country
 
 Determined the country generating the highest number of invoices for targeted marketing.
