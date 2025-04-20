@@ -216,7 +216,7 @@ Query Explanation:
 
 This query identifies the organization's most senior employee by checking their hierarchical level. It selects the employee's job title, full name, and seniority level from the database. The results are sorted in descending order to display the highest-ranking employee first. By limiting output to just one record, we pinpoint the single most qualified leader. This data-driven approach ensures objective leadership selection based on established company structure.
 
-- Invoice Volume by Country
+### **`Invoice Volume by Country`**
 
 Determined the country generating the highest number of invoices for targeted marketing.
 
@@ -231,6 +231,10 @@ limit 1;
 
 ```
 ![Invoice Volume by Country](https://github.com/user-attachments/assets/afccaf4d-0880-424c-b4d0-446c611af659)
+
+Query Explanation:
+
+This analysis identifies which country generates the highest volume of invoices. The query first examines all invoice records, then groups them by billing country to count transactions per nation. By sorting the results in descending order and limiting to the top result, we pinpoint the single country with the most invoices. This reveals the organization's strongest geographic market for sales activity.
 
 - Top 3 Invoice Values
 
