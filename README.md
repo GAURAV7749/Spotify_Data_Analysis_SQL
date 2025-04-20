@@ -40,17 +40,17 @@ In this project, I worked with a music database using MySQL Workbench. The datab
 
 - genre: Lists various music genres with their Genre IDs.
 
-invoice: Captures billing information including Invoice ID, Customer ID, Date, and Total.
+- invoice: Captures billing information including Invoice ID, Customer ID, Date, and Total.
 
-invoice_line: Stores line-by-line details of each invoice, such as Track ID, Quantity, and Unit Price.
+- invoice_line: Stores line-by-line details of each invoice, such as Track ID, Quantity, and Unit Price.
 
-media_type: Contains types of media formats like MPEG audio, AAC audio, etc.
+- media_type: Contains types of media formats like MPEG audio, AAC audio, etc.
 
-playlist: Stores playlist names and their IDs.
+- playlist: Stores playlist names and their IDs.
 
-playlist_track: Maps tracks to their respective playlists.
+- playlist_track: Maps tracks to their respective playlists.
 
-track: Contains metadata for each song, including Name, Album ID, Media Type, Genre, Composer, Duration, and Price.
+- track: Contains metadata for each song, including Name, Album ID, Media Type, Genre, Composer, Duration, and Price.
 
 These tables were queried using SQL to perform various data analysis operations such as aggregation, joins, filtering, sorting, and ranking to extract business insights from the music data.
 
