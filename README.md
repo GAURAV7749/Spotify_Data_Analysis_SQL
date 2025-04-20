@@ -197,6 +197,35 @@ select * from track;
 
 ![track](https://github.com/user-attachments/assets/e3b84873-f398-434a-af4e-21a7a85bc746)
 
+## 🔍 Analytical Insights
+
+Senior Employee Identification
+Identified the senior-most employee based on job title hierarchy to assign project leadership.
+
+Invoice Volume by Country
+Determined the country generating the highest number of invoices for targeted marketing.
+
+Top 3 Invoice Values
+Calculated the monetary value of the top 3 highest invoices to understand premium transactions.
+
+Promotional Festival Location
+Analyzed revenue by city to select the optimal location for a music festival based on customer spending.
+
+Best Customer Recognition
+Evaluated total customer expenditure to declare the highest-spending customer as "Best Customer".
+
+Rock Music Audience Profile
+Extracted customer details exclusively listening to Rock music for targeted engagement.
+
+Top Rock Music Artists
+Identified artists with the highest Rock music contributions for festival invitations.
+
+Genre Popularity by Country
+Mapped the most popular music genre per country to inform inventory and marketing strategies.
+
+Top Customers by Country
+Pinpointed the highest-spending customer per country for loyalty rewards.
+
 
 
 
