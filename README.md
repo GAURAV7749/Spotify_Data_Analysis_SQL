@@ -26,8 +26,8 @@ Don't forget to follow and star ⭐ the repository if you find it valuable.
 Tools Used🛠️:
 My Sql Workbench
 
+## 💾 Data Setup in SQL Workbench
 
-💾 Data Setup in SQL Workbench (Introduction Style)
 In this project, I worked with a music database using MySQL Workbench. The database includes several interrelated tables that reflect real-world entities in a music store environment.
 
 album: Contains details about each album, including Album ID and Title.
