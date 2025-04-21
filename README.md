@@ -338,9 +338,36 @@ Query Explanation:
 This SQL query identifies the top 10 rock artists based on their number of available tracks in the database. The analysis begins by connecting five key tables: track, album, artist, and genre through a series of JOIN operations that link tracks to their respective albums and artists while filtering for only rock genre tracks (WHERE g.name = "Rock"). By grouping the results by artist ID and name (GROUP BY ar.artist_id, ar.name), then counting the tracks per artist (COUNT(t.track_id) AS number_of_songs), the query quantifies each rock artist's representation in the catalog. The results are then sorted in descending order by track count (ORDER BY number_of_songs DESC) and limited to the top 10 performers (LIMIT 10). The output reveals AC/DC as the dominant rock artist with 18 tracks, followed by Aerosmith (15 tracks), and Audioslave and Led Zeppelin tied with 14 tracks each - providing valuable insights into the most prolific rock artists in this music collection, which could inform inventory decisions, promotional campaigns, or customer recommendations.
 
 
-- Genre Popularity by Country
+-  ### **`Genre Popularity by Country`** 
 
 Mapped the most popular music genre per country to inform inventory and marketing strategies.
+
+```sql
+# Viewing the Data
+WITH popular_genre AS (
+SELECT COUNT(il.quantity) AS purchases,c.country,g.name AS genre_name,g.genre_id,  
+ROW_NUMBER() OVER(PARTITION BY c.country ORDER BY COUNT(il.quantity) DESC) AS RowNo
+FROM invoice_line il
+JOIN invoice i ON i.invoice_id = il.invoice_id 
+JOIN customer c ON c.customer_id = i.customer_id 
+JOIN track t ON t.track_id = il.track_id 
+JOIN genre g ON g.genre_id = t.genre_id 
+GROUP BY c.country, g.name, g.genre_id
+    ORDER BY c.country ASC, purchases DESC
+)
+SELECT * 
+FROM popular_genre 
+WHERE RowNo <= 1;
+
+```
+
+![Genre Popularity by Country](https://github.com/user-attachments/assets/13d081a8-fbe7-409c-a1f0-1b2cd75c93f6)
+
+Query Explanation:
+
+This SQL query analyzes music genre popularity across different countries to reveal global listening trends. By connecting purchase records with customer locations and track genres, it identifies each country's most-bought music style. The results show rock music dominates overwhelmingly, being the top genre in 21 of the 24 countries analyzed - including major markets like the USA (70 purchases), Canada (57), United Kingdom (47), and Brazil (26). Only Norway and Spain break this pattern, preferring metal instead. The analysis uses a sophisticated ranking system that first counts all genre purchases per country, then uses ROW_NUMBER() to identify each nation's clear favorite. This reveals rock's universal appeal while highlighting rare regional variations, providing valuable insights for music platforms to customize their offerings - like emphasizing rock playlists globally while potentially adding more metal content for Scandinavian and Spanish audiences. The query's efficient structure processes complex data relationships to deliver these market insights in a clear, country-by-country breakdown.
+
+
 
 - Top Customers by Country
 
