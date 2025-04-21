@@ -271,9 +271,24 @@ Query Explanation:
 This SQL query analyzes invoice data to identify which city generated the highest total revenue. It works in three key steps: First, it groups all invoices by their billing_city using the GROUP BY clause. Then it calculates the sum of the total column for each city, labeling this aggregated value as "Totals". The ORDER BY sum(total) DESC sorts these city totals in descending order, putting the highest-revenue city at the top. Finally, the LIMIT 1 restriction returns only this top-performing city. The result shows Prague as the highest-grossing location with total revenues of approximately 273.24 currency units, making it the most successful city for this promotional festival based on invoice totals. This type of analysis helps businesses understand their best-performing markets for strategic decision-making.
 
 
-- Best Customer Recognition
-
+-  ### **`Best Customer Recognition`**
+  
 Evaluated total customer expenditure to declare the highest-spending customer as "Best Customer".
+
+```sql
+# Viewing the Data
+select c.first_name,c.last_name,sum(total) as Total from customer as c
+inner join invoice as i on c.customer_id = i.customer_id
+group by c.first_name,c.last_name
+order by Total desc
+limit 1;
+```
+
+![Best Customer Recognition](https://github.com/user-attachments/assets/9b36a213-b4ad-4434-8962-e2c527205bf6)
+
+Query Explanation:
+
+This SQL query identifies the top-spending customer by analyzing purchase history across joined customer and invoice data. First, it connects the customer and invoice tables through an inner join using matching customer_id values. The query then groups the combined records by each customer's first and last name while calculating their cumulative spending using sum(total) as Total. By sorting these aggregated totals in descending order with ORDER BY Total DESC and limiting to just one result with LIMIT 1, the query efficiently pinpoints the highest-value customer. The output reveals František Wichtelovič as the best customer with total purchases worth approximately 144.54 currency units, making them the clear candidate for special recognition or loyalty rewards. This analysis provides valuable insight for customer relationship management and targeted marketing strategies.
 
 - Rock Music Audience Profile
 
