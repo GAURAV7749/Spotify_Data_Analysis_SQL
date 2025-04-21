@@ -305,6 +305,8 @@ where g.name = "Rock"
 order by c.email
 ```
 
+Note: The image displays only a partial view of the complete results due to screenshot limitations. For the full dataset and comprehensive tables, please execute these queries directly in your SQL environment or refer to the complete result exports available in this repository's data outputs folder.
+
 ![Rock Music Audience Profile](https://github.com/user-attachments/assets/4a6b94e4-5e53-4ffa-be4d-d5156455628f)
 
 Query Explanation:
