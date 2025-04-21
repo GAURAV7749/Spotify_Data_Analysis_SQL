@@ -369,13 +369,40 @@ This SQL query analyzes music genre popularity across different countries to rev
 
 
 
-- Top Customers by Country
+-  ### **`Top Customers by Country`** 
 
 Pinpointed the highest-spending customer per country for loyalty rewards.
 
+```sql
+# Viewing the Data
+WITH Customer_with_country AS (
+    SELECT 
+        c.customer_id,
+        c.first_name,
+        c.last_name,
+        i.billing_country,
+        SUM(i.total) AS total_spending,
+        ROW_NUMBER() OVER(PARTITION BY i.billing_country ORDER BY SUM(i.total) DESC) AS RowNo 
+    FROM invoice i
+    JOIN customer c ON c.customer_id = i.customer_id
+    GROUP BY 
+        c.customer_id,
+        c.first_name,
+        c.last_name,
+        i.billing_country
+    ORDER BY 
+        i.billing_country ASC,
+        total_spending DESC
+)
+SELECT * FROM Customer_with_country 
+WHERE RowNo <= 1
+ORDER BY total_spending DESC;
+```
 
+![Top Customers by Country](https://github.com/user-attachments/assets/f64eea01-df60-43e9-9d53-0e5ee1729f83)
 
+Query Explanation:
 
+This SQL query identifies the highest-spending customer in each country by analyzing purchase data. First, it connects customer information with their invoice records to calculate each customer's total spending. The query then organizes customers by country and ranks them based on purchase amounts, assigning the top spender in each country a rank of 1. After establishing these rankings, the query filters to show only the top-ranked customer from each nation. Finally, it presents these leading customers sorted by total spending in descending order.
 
-
-
+The results reveal the Czech Republic's customer as the leading global spender with 144.54 inpurchases,followed by Ireland′stop customer at 144.54 inpurchases. The dataset covers 24 countries, with spending values ranging from 144.54 down to  37.62 in Denmark. This analysis provides valuable insights into international purchasing behaviors and regional market strengths.
