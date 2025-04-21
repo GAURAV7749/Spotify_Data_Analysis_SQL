@@ -314,9 +314,29 @@ Query Explanation:
 This SQL query builds a detailed profile of rock music listeners by analyzing customer purchase data across multiple connected database tables. The query starts with the customer table and progressively joins four additional tables: invoice, invoice_line, track, and genre - creating a complete chain from customer identity to musical preferences. By setting the condition WHERE g.name = "Rock", it filters to only include customers who purchased tracks classified under the rock genre. The SELECT DISTINCT clause ensures each customer appears only once in the results, even if they made multiple rock purchases. Finally, the results are organized alphabetically by email address (ORDER BY c.email) for easy reference. The output reveals a diverse international audience of rock music fans, with customers from countries including Canada, Brazil, Austria, Norway, France, Belgium, Argentina, Spain, and others - demonstrating the global appeal of rock music across this customer base. This type of audience analysis helps music businesses understand their core demographics and tailor marketing campaigns accordingly.
 
 
-- Top Rock Music Artists
+-  ### **`Top 10 Rock Music Artists`**
 
 Identified artists with the highest Rock music contributions for festival invitations.
+
+```sql
+# Viewing the Data
+SELECT ar.artist_id,ar.name,COUNT(t.track_id) AS number_of_songs FROM track t
+JOIN album al ON al.album_id = t.album_id
+JOIN artist ar ON ar.artist_id = al.artist_id
+JOIN genre g ON g.genre_id = t.genre_id
+where g.name ="Rock"
+GROUP BY ar.artist_id, ar.name
+ORDER BY number_of_songs DESC
+LIMIT 10;
+
+```
+
+![Top 10 Rock Music Artists](https://github.com/user-attachments/assets/7b115211-31c4-473d-8cc3-16aae87a5ba9)
+
+Query Explanation:
+
+This SQL query identifies the top 10 rock artists based on their number of available tracks in the database. The analysis begins by connecting five key tables: track, album, artist, and genre through a series of JOIN operations that link tracks to their respective albums and artists while filtering for only rock genre tracks (WHERE g.name = "Rock"). By grouping the results by artist ID and name (GROUP BY ar.artist_id, ar.name), then counting the tracks per artist (COUNT(t.track_id) AS number_of_songs), the query quantifies each rock artist's representation in the catalog. The results are then sorted in descending order by track count (ORDER BY number_of_songs DESC) and limited to the top 10 performers (LIMIT 10). The output reveals AC/DC as the dominant rock artist with 18 tracks, followed by Aerosmith (15 tracks), and Audioslave and Led Zeppelin tied with 14 tracks each - providing valuable insights into the most prolific rock artists in this music collection, which could inform inventory decisions, promotional campaigns, or customer recommendations.
+
 
 - Genre Popularity by Country
 
