@@ -267,6 +267,7 @@ limit 1;
 ![Promotional Festival Location](https://github.com/user-attachments/assets/52158c5f-fd96-4710-bbc8-3dff33213cdf)
 
 Query Explanation:
+
 This SQL query analyzes invoice data to identify which city generated the highest total revenue. It works in three key steps: First, it groups all invoices by their billing_city using the GROUP BY clause. Then it calculates the sum of the total column for each city, labeling this aggregated value as "Totals". The ORDER BY sum(total) DESC sorts these city totals in descending order, putting the highest-revenue city at the top. Finally, the LIMIT 1 restriction returns only this top-performing city. The result shows Prague as the highest-grossing location with total revenues of approximately 273.24 currency units, making it the most successful city for this promotional festival based on invoice totals. This type of analysis helps businesses understand their best-performing markets for strategic decision-making.
 
 
