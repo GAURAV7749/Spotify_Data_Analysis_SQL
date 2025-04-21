@@ -199,7 +199,7 @@ select * from track;
 
 ## 🔍 Analytical Insights
 
-### **`Senior Employee Identification`**
+- ### **`Senior Employee Identification`**
 
 Identified the senior-most employee based on job title hierarchy to assign project leadership.
 
@@ -216,7 +216,7 @@ Query Explanation:
 
 This query identifies the organization's most senior employee by checking their hierarchical level. It selects the employee's job title, full name, and seniority level from the database. The results are sorted in descending order to display the highest-ranking employee first. By limiting output to just one record, we pinpoint the single most qualified leader. This data-driven approach ensures objective leadership selection based on established company structure.
 
-### **`Invoice Volume by Country`**
+- ### **`Invoice Volume by Country`**
 
 Determined the country generating the highest number of invoices for targeted marketing.
 
@@ -253,9 +253,22 @@ Query Explanation:
 
 This SQL query selects all columns from the invoice table, then sorts the results in descending order by the total column to show the highest invoice amounts first. By adding LIMIT 3, it returns only the top three invoices with the largest totals. The output displays complete invoice details, including ID, customer information, billing address, and the sorted total amount. From the results, we can see that invoice #183 (€23.76) is the highest, followed by two invoices (#92 and #526) tied at $19.80 each—one from Canada and another from the Czech Republic. This type of query is useful for financial analysis, helping businesses quickly identify their most valuable transactions.
 
-- Promotional Festival Location
+-  ### **`Promotional Festival Location`**
 
 Analyzed revenue by city to select the optimal location for a music festival based on customer spending.
+
+```sql
+# Viewing the Data
+select billing_city,sum(total) as Totals from invoice
+group by billing_city
+order by sum(total) desc
+limit 1;
+```
+![Promotional Festival Location](https://github.com/user-attachments/assets/52158c5f-fd96-4710-bbc8-3dff33213cdf)
+
+Query Explanation:
+This SQL query analyzes invoice data to identify which city generated the highest total revenue. It works in three key steps: First, it groups all invoices by their billing_city using the GROUP BY clause. Then it calculates the sum of the total column for each city, labeling this aggregated value as "Totals". The ORDER BY sum(total) DESC sorts these city totals in descending order, putting the highest-revenue city at the top. Finally, the LIMIT 1 restriction returns only this top-performing city. The result shows Prague as the highest-grossing location with total revenues of approximately 273.24 currency units, making it the most successful city for this promotional festival based on invoice totals. This type of analysis helps businesses understand their best-performing markets for strategic decision-making.
+
 
 - Best Customer Recognition
 
