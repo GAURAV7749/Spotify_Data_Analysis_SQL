@@ -236,9 +236,22 @@ Query Explanation:
 
 This analysis identifies which country generates the highest volume of invoices. The query first examines all invoice records, then groups them by billing country to count transactions per nation. By sorting the results in descending order and limiting to the top result, we pinpoint the single country with the most invoices. This reveals the organization's strongest geographic market for sales activity.
 
-- Top 3 Invoice Values
+-  ### **`Top 3 Invoice Values`**
 
 Calculated the monetary value of the top 3 highest invoices to understand premium transactions.
+
+```sql
+# Viewing the Data
+select * from invoice
+order by total desc
+limit 3;
+
+```
+![Top three values](https://github.com/user-attachments/assets/832592f6-89a0-464b-b45e-e4c0b2e5e77f)
+
+Query Explanation:
+
+This SQL query selects all columns from the invoice table, then sorts the results in descending order by the total column to show the highest invoice amounts first. By adding LIMIT 3, it returns only the top three invoices with the largest totals. The output displays complete invoice details, including ID, customer information, billing address, and the sorted total amount. From the results, we can see that invoice #183 (€23.76) is the highest, followed by two invoices (#92 and #526) tied at $19.80 each—one from Canada and another from the Czech Republic. This type of query is useful for financial analysis, helping businesses quickly identify their most valuable transactions.
 
 - Promotional Festival Location
 
