@@ -290,9 +290,27 @@ Query Explanation:
 
 This SQL query identifies the top-spending customer by analyzing purchase history across joined customer and invoice data. First, it connects the customer and invoice tables through an inner join using matching customer_id values. The query then groups the combined records by each customer's first and last name while calculating their cumulative spending using sum(total) as Total. By sorting these aggregated totals in descending order with ORDER BY Total DESC and limiting to just one result with LIMIT 1, the query efficiently pinpoints the highest-value customer. The output reveals František Wichtelovič as the best customer with total purchases worth approximately 144.54 currency units, making them the clear candidate for special recognition or loyalty rewards. This analysis provides valuable insight for customer relationship management and targeted marketing strategies.
 
-- Rock Music Audience Profile
+-  ### **`Rock Music Audience Profile`**
 
 Extracted customer details exclusively listening to Rock music for targeted engagement.
+
+```sql
+# Viewing the Data
+select distinct c.first_name,c.last_name,c.email,g.name as Gerne  from customer as c
+inner join invoice as i on c.customer_id = i.customer_id
+inner join invoice_line as il on i.invoice_id = il.invoice_id
+inner join track as t on t.track_id = il.track_id
+inner join genre as g  on t.genre_id = g.genre_id
+where g.name = "Rock"
+order by c.email
+```
+
+![Rock Music Audience Profile](https://github.com/user-attachments/assets/4a6b94e4-5e53-4ffa-be4d-d5156455628f)
+
+Query Explanation:
+
+This SQL query builds a detailed profile of rock music listeners by analyzing customer purchase data across multiple connected database tables. The query starts with the customer table and progressively joins four additional tables: invoice, invoice_line, track, and genre - creating a complete chain from customer identity to musical preferences. By setting the condition WHERE g.name = "Rock", it filters to only include customers who purchased tracks classified under the rock genre. The SELECT DISTINCT clause ensures each customer appears only once in the results, even if they made multiple rock purchases. Finally, the results are organized alphabetically by email address (ORDER BY c.email) for easy reference. The output reveals a diverse international audience of rock music fans, with customers from countries including Canada, Brazil, Austria, Norway, France, Belgium, Argentina, Spain, and others - demonstrating the global appeal of rock music across this customer base. This type of audience analysis helps music businesses understand their core demographics and tailor marketing campaigns accordingly.
+
 
 - Top Rock Music Artists
 
