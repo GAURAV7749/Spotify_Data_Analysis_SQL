@@ -9,10 +9,9 @@
 - [**🔍 Exploring the Dataset**](#-exploring-the-dataset)
 - [**🔍 Analytical Insights**](#-analytical-insights)
 - [**⚙️ SQL Techniques**](#️-sql-techniques)
-- [**💡 Key Findings**](#-key-findings)
 - [**📂 Data Source**](#-data-source)
 - [**🛠️ Skills Demonstrated**](#️-skills-demonstrated)
-- [**🚀 Future Scope**](#-future-scope)
+
   
 The Spotify Data Analysis Project: In today's changing world, data analysis has become crucial in fields such as business, research, and meteorology. This project showcases the role that data plays in making decisions, advancing research initiatives, and even predicting weather patterns.
 
