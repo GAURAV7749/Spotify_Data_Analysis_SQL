@@ -410,6 +410,44 @@ The results reveal the Czech Republic's customer as the leading global spender w
 
 
 
+## ⚙️ SQL Techniques
+
+This project demonstrates a variety of SQL techniques applied to real-world business problems:
+
+- Data Filtering
+Used WHERE clauses to extract specific records based on conditions.
+
+- Sorting Results
+Applied ORDER BY to arrange data in ascending or descending order.
+
+- Aggregate Functions
+Used SUM(), COUNT(), AVG() to calculate total sales, number of customers, average invoices, etc.
+
+- Grouping Data
+Used GROUP BY to summarize data by country, customer, genre, and more.
+
+- Joining Multiple Tables
+Connected multiple related tables using INNER JOIN to retrieve complete information.
+
+- Common Table Expressions (CTEs)
+Simplified complex queries using WITH clauses to break them into readable parts.
+
+- Window Functions
+Applied ROW_NUMBER() to rank customers and identify top spenders per region or genre.
+
+- Subqueries
+Used nested queries to solve step-by-step problems like finding top-selling genres.
+
+- Aliasing
+Used AS to rename columns and tables for better readability.
+
+- LIMIT and DISTINCT
+Limited output results and removed duplicates where necessary.
+
+
+
+
+
 ## 📂 Data Source
 
 Data Set📂:
