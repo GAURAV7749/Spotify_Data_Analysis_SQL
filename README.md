@@ -409,3 +409,40 @@ Query Explanation:
 This SQL query identifies the highest-spending customer in each country by analyzing purchase data. First, it connects customer information with their invoice records to calculate each customer's total spending. The query then organizes customers by country and ranks them based on purchase amounts, assigning the top spender in each country a rank of 1. After establishing these rankings, the query filters to show only the top-ranked customer from each nation. Finally, it presents these leading customers sorted by total spending in descending order.
 
 The results reveal the Czech Republic's customer as the leading global spender with 144.54 inpurchases,followed by Ireland′stop customer at 144.54 inpurchases. The dataset covers 24 countries, with spending values ranging from 144.54 down to  37.62 in Denmark. This analysis provides valuable insights into international purchasing behaviors and regional market strengths.
+
+
+
+## 📂 Data Source
+
+Data Set📂:
+[Spotify Dataset](https://drive.google.com/drive/folders/1bB1oyYPT9Nde5LxD_HCSWphku5BLvfHG?usp=sharing)
+
+- album: Contains details about each album, including Album ID and Title.
+
+- artist: Holds information about artists, including their unique Artist ID and Name.
+
+- customer: Stores customer data such as names, addresses, and contact details.
+
+- employee: Represents employees of the store with their roles and reporting structure.
+
+- genre: Lists various music genres with their Genre IDs.
+
+- invoice: Captures billing information including Invoice ID, Customer ID, Date, and Total.
+
+- invoice_line: Stores line-by-line details of each invoice, such as Track ID, Quantity, and Unit Price.
+
+- media_type: Contains types of media formats like MPEG audio, AAC audio, etc.
+
+- playlist: Stores playlist names and their IDs.
+
+- playlist_track: Maps tracks to their respective playlists.
+
+- track: Contains metadata for each song, including Name, Album ID, Media Type, Genre, Composer, Duration, and Price.
+
+
+
+
+
+
+
+
