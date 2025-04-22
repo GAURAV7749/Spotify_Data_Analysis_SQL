@@ -479,7 +479,7 @@ Used WITH clause to write modular and readable subqueries:
 popular_genre for finding most popular genre per country
 Customer_with_country to get top spender per country
 
--Nested Queries and Subqueries
+- Nested Queries and Subqueries
 Logical structuring of complex queries to break problems into manageable parts.
 
 
