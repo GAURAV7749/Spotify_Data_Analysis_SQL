@@ -24,13 +24,9 @@ Through the Spotify Data Analysis Project, I not only sharpened my SQL querying
 
 Don't forget to follow and star ⭐ the repository if you find it valuable.
 
-Tools Used🛠️:
+Tools Used🛠️:My Sql Workbench
 
-My Sql Workbench
-
-Data Set📂:
-
-[Spotify Dataset](https://drive.google.com/drive/folders/1bB1oyYPT9Nde5LxD_HCSWphku5BLvfHG?usp=sharing)
+Data Set📂:[Spotify Dataset](https://drive.google.com/drive/folders/1bB1oyYPT9Nde5LxD_HCSWphku5BLvfHG?usp=sharing)
 
 ## 💾 Data Setup in SQL Workbench
 
