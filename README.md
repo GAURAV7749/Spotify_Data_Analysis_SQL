@@ -439,7 +439,48 @@ Data Set📂:
 
 
 
+## 🛠️ Skills Demonstrated
 
+- SELECT Statements
+Basic data retrieval from multiple tables using SELECT *, SELECT column_name, etc.
+
+- Filtering with WHERE Clause
+Used to filter records based on specific conditions, e.g., WHERE g.name = "Rock".
+
+- Sorting with ORDER BY
+Sorted data in ascending/descending order using ORDER BY, e.g., ORDER BY total DESC.
+
+- Aggregation Functions
+Used functions like SUM(), COUNT() to calculate totals and counts.
+
+- GROUP BY Clause
+Grouped data by columns to get summary statistics, e.g., GROUP BY billing_country.
+
+- JOINs (INNER JOIN)
+Connected multiple tables together using INNER JOIN, such as:
+customer with invoice
+invoice_line with track
+track with genre and album
+
+- Aliases (AS)
+Renamed columns and tables for better readability, e.g., AS Total, AS RowNo.
+
+- LIMIT Clause
+Retrieved only the top results using LIMIT, such as top 1 country, top 3 invoices, etc.
+
+- DISTINCT Keyword
+Eliminated duplicate records in output using SELECT DISTINCT.
+
+- Window Functions
+Used ROW_NUMBER() to rank customers and genres per country or billing region.
+
+- Common Table Expressions (CTEs)
+Used WITH clause to write modular and readable subqueries:
+popular_genre for finding most popular genre per country
+Customer_with_country to get top spender per country
+
+-Nested Queries and Subqueries
+Logical structuring of complex queries to break problems into manageable parts.
 
 
 
