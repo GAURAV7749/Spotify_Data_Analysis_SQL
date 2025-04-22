@@ -27,6 +27,9 @@ Don't forget to follow and star ⭐ the repository if you find it valuable.
 Tools Used🛠️:
 My Sql Workbench
 
+Data Set:
+[Spotify Dataset](https://drive.google.com/drive/folders/1bB1oyYPT9Nde5LxD_HCSWphku5BLvfHG?usp=sharing)
+
 ## 💾 Data Setup in SQL Workbench
 
 In this project, I worked with a music database using MySQL Workbench. The database includes several interrelated tables that reflect real-world entities in a music store environment.
